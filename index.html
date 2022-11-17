@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graph</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="canvas"><canvas id="canvas"></canvas></div>
+    <div class="toolbar">
+      <div class="utilities">
+        <button class="utility_btns" id="transform">Transform</button
+        ><button class="utility_btns" id="macro_transform">
+          Macro Transform</button
+        ><button class="utility_btns" id="clear_graph">Clear Graph</button
+        ><button class="utility_btns" id="hide_points">Show Points</button>
+        <div id="zoom_div">
+          <button id="zoom_in">+</button><button id="zoom_out">-</button>
+        </div>
+      </div>
+      <div class="elements_container">
+        <div class="new_element">
+          <button id="new_point">Create new Point</button
+          ><button id="new_line">Create new Line</button>
+          <button id="new_grid">Create Grid</button>
+        </div>
+        <div class="elements">
+          <h2>Points</h2>
+          <div class="points"></div>
+          <h2>Lines</h2>
+          <div class="lines"></div>
+        </div>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <h3>Precision:</h3>
+          <input
+            type="text"
+            id="precision"
+            placeholder="Precision: 500"
+            class="setting_input"
+          />
+        </div>
+        <div class="setting">
+          <h3>Function:</h3>
+          <input
+            type="text"
+            placeholder="f(x) = x^2"
+            id="function_input"
+            class="setting_input"
+            value="f(x) = x"
+          />
+          <div class="pre-defined_functions">
+            <button class="pre-defined_function_btn" id="f1">x^()</button>
+            <button class="pre-defined_function_btn" id="f2">sin(x)</button>
+            <button class="pre-defined_function_btn" id="f3">cos(x)</button>
+            <button class="pre-defined_function_btn" id="f4">tan(x)</button>
+            <button class="pre-defined_function_btn" id="f5">exp(x)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

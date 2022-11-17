@@ -1,0 +1,179 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.canvas {
+    position: fixed;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+.toolbar {
+    display: grid;
+    width: 300px;
+    height: 1200px;
+}
+
+.utilities {
+    display: grid;
+    background-color: white;
+    z-index: 0;
+}
+
+.elements_container {
+    background-color: white;
+    z-index: 0;
+}
+
+.utility_btns {
+    border-radius: 25px;
+}
+
+#transform,
+#macro_transform,
+#clear_graph,
+#hide_points,
+#zoom_out,
+#zoom_in {
+    margin: 5px;
+    background-color: lightblue;
+    z-index: 0;
+    border-radius: 75px;
+}
+#transform:hover,
+#macro_transform:hover,
+#clear_graph:hover,
+#hide_points:hover,
+#zoom_out:hover,
+#zoom_in:hover {
+    background-color: lightcyan;
+}
+
+#transform:active,
+#macro_transform:active,
+#clear_graph:active,
+#hide_points:active,
+#zoom_out:active,
+#zoom_in:active {
+    background-color: rgb(173, 212, 212);
+}
+
+.new_element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: solid 2px;
+    padding-top: 2px;
+}
+
+#new_point,
+#new_line,
+#new_grid {
+    background-color: lightgray;
+    z-index: 0;
+}
+
+#new_point:hover,
+#new_line:hover,
+#new_grid:hover {
+    background-color: darkgray;
+}
+
+.lines,
+.points {
+    overflow-y: scroll;
+    border: solid 5px;
+    height: 230px;
+
+    background-color: white;
+    display: grid;
+    row-gap: 5px;
+    z-index: 0;
+    margin: 3px;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 0;
+}
+input {
+    font-size: 15px;
+    background-color: white;
+}
+
+.delete_btn,
+.hide_btn {
+    color: crimson;
+}
+
+#zoom_div {
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.line_input {
+    width: 150px;
+    border-radius: 3px;
+}
+
+.line {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 0;
+    height: 50px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.setting {
+    z-index: 0;
+    text-align: center;
+    display: block;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.setting_input {
+    border: solid 2px black;
+}
+
+.pre-defined_functions {
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.pre-defined_function_btn {
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+.pre-defined_function_btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.pre-defined_function_btn:active {
+    opacity: 0.4;
+}
+#function_input:active {
+    border-color: green
+}
